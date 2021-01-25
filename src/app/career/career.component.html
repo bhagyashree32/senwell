@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  
+  <section class="join">
+    <div class="container">
+        <h2 class="text-center mb-5">JOB OPPORTUNITIES
+        </h2>
+      <div class="row mb-5" >
+       <div class="col-lg-4 mb-5" *ngFor ="let cs of data$ | async ">
+                <div class="box shadow-sm">
+                  <h2 class="mb-5">{{cs?.position}}</h2>
+                  <h4>{{cs?.exp}}</h4>
+                  <h6>{{cs?.des}}</h6>
+
+
+                  
+                </div>            
+            </div>
+            {{data$}}
+        </div>
+     </div>
+</section>

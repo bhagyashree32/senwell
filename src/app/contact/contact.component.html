@@ -1,0 +1,43 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<section class="career">
+  <div class="container">
+    <h1 class="text-center mb-5">Get In Touch
+    </h1>
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <div class="b1">
+          <form [formGroup]="record" action="https://formspree.io/f/xdopbpqz" method="POST">
+            <input type="text" title="Your Name" class="name" placeholder="Your Name*" formControlName="name" name="name"><br>
+            <div *ngIf="record.get('name')?.invalid ">feild is required</div><br>
+            <input type="email" title="Email Address" class="mail" required placeholder="Email Address*"
+              style="width:47%;" formControlName="email" name="email">
+            &nbsp;&nbsp;<input type="numbers" title="Your Name" class="mail" placeholder="+91" style="width:50%"
+              formControlName="phone" name="phone"><br>
+            <span *ngIf="record.get('email')?.invalid ">feild is
+              required</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              *ngIf="record.get('phone')?.invalid ">feild is required</span><br>
+            <input type="text" title="Message" class="message" placeholder="Message" formControlName="msg" name="msg"><br>
+            <div *ngIf="record.get('msg')?.invalid ">feild is required</div><br>
+            <button type="submit" class="bttn mb-5" (click)="onSubmit()">Submit</button><br>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="b2 mb-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.281431765418!2d73.94247341420477!3d18.561346572771864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3dbcbd5f12f%3A0xcd7dd569ee6edd06!2sEdsun%20solutions!5e0!3m2!1sen!2sin!4v1611555575735!5m2!1sen!2sin"
+            width="300px" height="330px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>

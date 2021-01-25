@@ -1,0 +1,84 @@
+.name{
+    background-color:#f4f7f9;
+    border-radius:2px;
+    width:100%;
+    padding:10px;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    height:40px;
+}
+.message{
+    background-color:#f4f7f9;
+    border-radius:2px;
+    padding:10px;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    height:100px;
+}
+.mail{
+    background-color:#f4f7f9;
+    border-radius:2px;
+    padding:20px;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    height:40px;
+    margin-left: -4px;
+}
+.bttn{
+    background-color: #00979d;
+    color:white;
+    transition: .8s;
+    line-height:50%;
+    width:100%;
+    padding:10px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height:35px;
+}
+.bttn:hover{
+    background-color:#006f73 ;
+    color:white;
+    border-radius: 5px;
+
+}
+.career{
+    background-color: #364f70;
+   
+}
+h1{
+    color: #ffffff;
+
+}
+/*.b1{
+    background-color: #ffffff;
+    padding:20px 30px;
+}*/
+.b2{
+    height:auto;
+    max-width:100%;
+    padding-left: 50px;
+}
+@media screen and (max-width:600px)
+{
+    .b2{
+      padding-left:10px;
+    }
+}
+
+
